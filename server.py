@@ -17,14 +17,15 @@ def emotion_detection_route():
         return "Invalid text! please try again"
     
     return (
-        "For the given statement, the system response is"
-        f"'anger' : {response['anger']},"
-        f"'disgust' : {response['disgust']},"
-        f"'fear' : {response['fear']},"
-        f"'joy' : {response['joy']},"
-        f"'sadness' : {response['sadness']}."
+        "For the given statement, the system response is "
+        f"'anger': {response['anger']}, "
+        f"'disgust': {response['disgust']}, "
+        f"'fear': {response['fear']}, "
+        f"'joy': {response['joy']} and "
+        f"'sadness': {response['sadness']}. "
         f"The dominant emotion is {response['dominant_emotion']}."
     )
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=5000)
