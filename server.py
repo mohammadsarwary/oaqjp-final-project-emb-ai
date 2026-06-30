@@ -11,7 +11,7 @@ def index():
 def emotion_detection_route():
 
     text_to_analyze=request.args.get('textToAnalyze')
-    response=emotion_detection('text_to_analyze')
+    response=emotion_detection(text_to_analyze)
 
     if response['dominant_emotion'] is None:
         return "Invalid text! please try again"
