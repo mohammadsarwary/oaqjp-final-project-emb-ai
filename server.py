@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request
-from EmotionDetection import emotion_detection
+from EmotionDetection import emotion_detector
 
 app=Flask(__name__)
 
@@ -11,7 +11,7 @@ def index():
 def emotion_detection_route():
 
     text_to_analyze=request.args.get('textToAnalyze')
-    response=emotion_detection(text_to_analyze)
+    response=emotion_detector(text_to_analyze)
 
     if response['dominant_emotion'] is None:
         return "Invalid text! please try again"
