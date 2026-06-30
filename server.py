@@ -3,11 +3,11 @@ from EmotionDetection import emotion_detection
 
 app=Flask(__name__)
 
-app.route('/')
+@app.route('/')
 def index():
     return render_template('index.html')
 
-app.route('/emotionDetector')
+@app.route('/emotionDetector')
 def emotion_detection_route():
 
     text_to_analyze=request.args.get('textToAnalyze')
