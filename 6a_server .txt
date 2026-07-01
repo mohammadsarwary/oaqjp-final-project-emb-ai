@@ -1,0 +1,3 @@
+127.0.0.1 - - [30/Jun/2026 15:52:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2026 15:52:02] "GET /static/mywebscript.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/Jun/2026 15:52:15] "GET /emotionDetector?textToAnalyze=I%20think%20I%20am%20having%20fun HTTP/1.1" 200 -
